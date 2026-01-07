@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV Rik Peeters</title>
+  <style>
+    :root {
+      --primary: #1f2937;
+      --secondary: #4b5563;
+      --accent: #2563eb;
+      --bg: #f9fafb;
+      --card: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--primary);
+      line-height: 1.6;
+      padding: 40px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: var(--card);
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 32px;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+    }
+
+    header p {
+      color: var(--secondary);
+    }
+
+    .profiel p {
+      max-width: 800px;   
+      font-size: 1.05rem;  
+    }
+
+    header .profile {
+      display: flex;
+      align-items: center;
+      gap: 12px; 
+    }
+
+    header .profile img {
+      width: 48px;       
+      height: 48px;       
+      border-radius: 50%; 
+      object-fit: cover;  
+      border: 2px solid var(--accent); 
+    }
+
+    header .profile h1 {
+      font-size: 2rem; 
+      margin: 0;
+    }
+
+    .section {
+      margin-bottom: 32px;
+    }
+
+    .section h2 {
+      font-size: 1.4rem;
+      margin-bottom: 12px;
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+      padding-bottom: 4px;
+    }
+
+    .item {
+      margin-bottom: 16px;
+    }
+
+    .item h3 {
+      font-size: 1.05rem;
+    }
+
+    .item span {
+      font-size: 0.9rem;
+      color: var(--secondary);
+    }
+
+    ul {
+      margin-left: 18px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill {
+      background: #e5e7eb;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      transition-delay: 0.05s;
+    }
+
+    .skill:hover {
+      transform: translateY(-4px) scale(1.05);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+      transition: all 0.3s ease;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--secondary);
+      margin-top: 40px;
+    }
+
+    .contacts a {
+      color: var(--accent);
+      text-decoration: none;
+      margin-left: 15px;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 20px;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+  <div class="profile">
+    <img src="https://userpicture20.smartschool.be/User/Userimage/hashimage/hash/1045_d961c326-df20-4d8a-acbe-41e2a661c133/plain/1/res/48" alt="Rik Peeters">
+    <h1>Rik Peeters</h1>
+  </div>
+  <div class="contacts">
+    <a href="mailto:peeters.rik09@gmail.com">📧 peeters.rik09@gmail.com</a>
+    <a href="tel:+32468367096">📞 +32 468367096</a>
+  </div>
+  </header>
+
+    </header>
+
+    <section class="section">
+      <div class="profiel">
+      <h2>Profiel</h2>
+      <p>
+        Ik ben 16 jaar en woon in Rijmenam. In mijn vrije tijd ben ik actief in de scouts, 
+        waar ik heb geleerd om samen te werken, verantwoordelijkheid op te nemen en 
+        initiatief te tonen. Daarnaast heb ik een grote interesse in technologie en 
+        programmeren en werk ik graag aan creatieve en praktische projecten. 
+        Ik leer snel bij en sta altijd open voor nieuwe uitdagingen.
+      </p>
+      </div>
+    </section>
+
+
+    <section class="section">
+      <h2>Werkervaring</h2>
+      <div class="item">
+        <h3>Jobstudent – Frituur Rijmenam</h3>
+        <span> Januari 2025 – Maart 2025</span>
+      </div>
+      <div class="item">
+        <h3>Jobstudent – Tuinen Christophe</h3>
+        <span> Juni 2025 – Augustus 2025</span>
+      </div>
+      <div class="item">
+        <h3>Stage – Optima Networks</h3>
+        <span>Januari 2026 – Februari 2026</span>
+      </div>
+    </section>
+
+    <section class="section ">
+      <h2>Opleiding</h2>
+      <div class="item">
+        <h3>STEM Wetenschappen – Koninklijk Atheneum Keerbergen</h3>
+        <span>2021 – 2023</span>
+      </div>
+      <div class="item">
+        <h3>Technologische Wetenschappen – Technisch Atheneum Keerbergen</h3>
+        <span>2023 – 2025</span>
+      </div>
+      <div class="item">
+        <h3>Applicatie & Databeheer – Technisch Atheneum Keerbergen</h3>
+        <span>2025 – 2026</span>
+      </div>
+    </section>
+
+  <section class="section">
+  <h2>Vaardigheden</h2>
+
+  <h3>Programmeren</h3>
+  <div class="skills">
+    <div class="skill">Python</div>
+    <div class="skill">HTML</div>
+    <div class="skill">CSS</div>
+    <div class="skill">HeidiSQL</div>
+    <div class="skill">GitHub</div>
+    <div class="skill">Ubuntu</div>
+    <div class="skill">Pterodactyl (Docker)</div>
+  </div>
+
+  <h3>Wordt aan gewerkt</h3>
+  <div class="skills">
+    <div class="skill">JavaScript</div>
+    <div class="skill">C#</div>
+  </div>
+
+  <h3>Overige vaardigheden</h3>
+  <div class="skills">
+    <div class="skill">Samenwerken</div>
+    <div class="skill">Probleemoplossend denken</div>
+    <div class="skill">Zelfstandig werken</div>
+    <div class="skill">Communicatie</div>
+  </div>
+
+  <section class="section">
+  <h2>Talen</h2>
+
+  <div class="skills">
+    <div class="skill">Nederlands - Moedertaal</div>
+    <div class="skill">Engels - Gevorderde</div>
+    <div class="skill">Frans -  Basis</div>
+    <div class="skill">Spaans -  Beginner</div>
+  </div>
+
+</section>
+    <footer>
+      © 2026 – Rik Peeters
+    </footer>
+  </div>
+</body>
+</html>
