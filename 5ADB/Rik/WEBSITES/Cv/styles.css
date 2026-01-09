@@ -72,9 +72,13 @@
        margin-right: 6px;
        margin-top: 25px;
      }
+
+     .profile a:hover {
+       text-decoration: underline;
+     }
  
      .navigation button {
-        background: var(--bg);
+       background: var(--bg);
        padding: 7px 14px;
        border-radius: 20px;
        font-size: 0.9rem;
