@@ -1,14 +1,14 @@
 body {
     font-family: Arial, sans-serif;
-    background: #f4f4f4;
     margin: 0;
     padding: 0;
+    background: #152f47;
 }
 
 .container {
     max-width: 900px;
     margin: 40px auto;
-    background: white;
+    background: #345f7f;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
@@ -18,7 +18,7 @@ body {
     display: flex;
     align-items: center;
     gap: 30px;
-    border-bottom: 2px solid #2c3e50;
+    border-bottom: 2px solid #2c81c7;
     padding-bottom: 20px;
     margin-bottom: 30px;
 }
@@ -37,16 +37,10 @@ body {
 
 nav {
     margin-bottom: 20px;
-    border-bottom: 2px solid #ddd;
+    border-bottom: 2px solid #2c81c7;
     padding-bottom: 10px;
 }
 
-nav a {
-    margin-right: 20px;
-    text-decoration: none;
-    color: #2c3e50;
-    font-weight: bold;
-}
 
 nav a:hover {
     text-decoration: underline;
@@ -56,7 +50,7 @@ nav a:hover {
 nav a{
     margin-right: 20px;
     text-decoration: none;
-    color: #2c3e50;
+    color: #ffffff;
     font-weight: bold;
     transition: color 0.2s ease;
 }
@@ -101,4 +95,17 @@ input:checked + .tab-label {
 #tab4:checked ~ #content4,
 #tab5:checked ~ #content5 {
     display: block;
+}
+
+.header {
+    margin: 0;
+    font-size: 2rem;
+    color: #8a8b8c;
+}
+
+.text {
+    color: #f9fafb;
+    border-bottom: 2px solid #2c81c7;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
 }

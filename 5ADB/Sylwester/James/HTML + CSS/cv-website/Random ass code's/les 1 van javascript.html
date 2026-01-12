@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+
+<h2 id="teller">0</h2>
+<button onclick="plus()">+</button>
+<button onclick="min()">-</button>
+
+<script>
+    let count = 0;
+
+    function plus() {
+        count++;
+        document.getElementById("teller").innerText = count;
+    }
+
+    function min() {
+        count--;
+        document.getElementById("teller").innerText = count;
+    }
+</script>
+
+</html>
