@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>JavaScript Test</title>
+</head>
+<body>
+    <p>>0</p>
+    <button onclick="plus()">+</button>
+    <button onclick="min()">-</button>
+
+</body>
+</html>
+<script>
+    let count = 0;
+    function plus() {
+        count++;
+        document.querySelector("p").innerText = count;
+    }
+    function min() {
+        count--;
+        document.querySelector("p").innerText = count;
+    }
+</script>
