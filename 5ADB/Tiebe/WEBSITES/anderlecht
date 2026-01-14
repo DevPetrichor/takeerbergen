@@ -1,0 +1,66 @@
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anderlecht - Informatie en Nieuws</title>
+    <link rel="stylesheet" href="styles.css">
+</head> 
+<body> 
+    <header>
+        <img src="anderlecht_logo.png" alt="Anderlecht Logo" class="logo">
+        <h1> RSCA</h1> 
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#news">Nieuws</a></li>
+            </ul>
+        </nav>
+    </header>  
+<div class="container">
+    <h1> anderlecht </h1>
+</body>     
+</html>
+    <section id="home">
+        <h2>Welkom bij Anderlecht</h2>
+        <p>RSC Anderlecht is een Belgische voetbalclub gevestigd in Brussel. De club is opgericht in 1908 en heeft een rijke geschiedenis met tal van nationale en internationale titels.</p>
+    </section>
+    <section id="spelers">
+        <h2>Spelers</h2>
+        <h3>Keepers</h3>
+        <ul>
+
+            <li>26 Colin Coosemans</li>
+            <li>16 Mats Kikkenborg</li>
+            <li>73 Joachim Imbrechts </li>
+        </ul>   
+        <h3>Verdedigers</h3>
+        <ul>
+            <li>2 Zoumana Keita </li>
+            <li>3 lucas hey </li>
+            <li>5 Moussa N'Diaye</li>
+            <li>6 Ludwig Augustinsson </li>
+            <li>7 Ilay camara   </li>
+            <li>15 Mihajlo Ilić  </li>
+            <li>54 Killian Sardella </li>
+            <li>55 Marco Kana </li>
+            <li> 58 Yasin Özcan  </li>
+            <li>79 Ali Maamar </li>
+        </ul>
+        <h3>Middenvelders</h3>
+        <ul>
+            <li>8 Cedric Hatenboer </li>
+            <li>10 Yari Verschaeren</li>
+            <li>11 Thorgan Hazard</li>
+            <li>13 Nathan Saliba </li>
+            <li>21 César Huerta </li>
+            <li>24 Enric Llansana </li>
+            <li>29 Mario Stroeykens </li>
+            <li>74 Nathan De Cat</li>
+            <li>78 Anas Tajaouart </li>
+            <li>99 Ibrahim Kanaté </li>
+        </ul>
+        <h3>Aanvallers</h3> 
+        <ul>
+            <li>19 Nilson Angulo </li>
+            <li>20 Luis Vázquez </li>
+           

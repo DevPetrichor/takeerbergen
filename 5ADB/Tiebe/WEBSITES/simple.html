@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unicorn Pagina</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #e0c3fc 0%, #fcb7b7 100%);
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background: rgba(255,255,255,0.85);
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(67,198,172,0.2);
+            padding: 40px 32px;
+            margin-top: 80px;
+            text-align: center;
+        }
+        h1 {
+            color: #e0c3fc;
+            margin-bottom: 16px;
+        }
+        p {
+            color: #333;
+            font-size: 1.2em;
+        }
+        .btn {
+            margin-top: 24px;
+            padding: 12px 32px;
+            background: #e0c3fc;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .btn:hover {
+            background: #b39ddb;
+        }
+        .emoji {
+            font-size: 2.5em;
+            margin-bottom: 16px;
+        }
+        .unicorn-svg {
+            margin-bottom: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="emoji">🦄</div>
+        <div class="unicorn-svg">
+            <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="60" cy="80" rx="40" ry="25" fill="#fff" stroke="#e0c3fc" stroke-width="3"/>
+                <ellipse cx="60" cy="60" rx="30" ry="18" fill="#fff" stroke="#fcb7b7" stroke-width="2"/>
+                <circle cx="60" cy="55" r="10" fill="#fff" stroke="#43c6ac" stroke-width="2"/>
+                <rect x="67" y="35" width="6" height="20" rx="3" fill="#ffe066" stroke="#f9d423" stroke-width="2" transform="rotate(-20 67 35)"/>
+                <ellipse cx="70" cy="60" rx="4" ry="2" fill="#fcb7b7"/>
+                <ellipse cx="50" cy="60" rx="4" ry="2" fill="#fcb7b7"/>
+                <ellipse cx="60" cy="65" rx="6" ry="3" fill="#e0c3fc"/>
+                <ellipse cx="65" cy="52" rx="2" ry="1" fill="#333"/>
+                <ellipse cx="55" cy="52" rx="2" ry="1" fill="#333"/>
+                <path d="M55 68 Q60 72 65 68" stroke="#333" stroke-width="2" fill="none"/>
+            </svg>
+        </div>
+        <h1>Unicorn Pagina</h1>
+        <p>Welkom op de magische unicorn-pagina!<br>Geniet van de kleuren en de vrolijkheid 🦄✨</p>
+        <button class="btn" onclick="alert('Unicorn power! 🌈🦄')">Klik op de unicorn!</button>
+    </div>
+</body>
+</html>

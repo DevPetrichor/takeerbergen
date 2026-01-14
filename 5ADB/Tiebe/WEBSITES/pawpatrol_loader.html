@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paw Patrol Laadscherm</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #6dd5ed 0%, #f9d423 100%);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        .loader-container {
+            background: rgba(255,255,255,0.95);
+            border-radius: 24px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+            padding: 48px 40px;
+            text-align: center;
+            position: relative;
+        }
+        .paw {
+            font-size: 4em;
+            animation: bounce 1.2s infinite alternate;
+            display: inline-block;
+        }
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-24px); }
+        }
+        .title {
+            font-size: 2em;
+            color: #f9d423;
+            font-weight: bold;
+            margin-top: 24px;
+            margin-bottom: 12px;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 8px #6dd5ed;
+        }
+        .subtitle {
+            color: #333;
+            font-size: 1.2em;
+            margin-bottom: 24px;
+        }
+        .loader-bar {
+            width: 220px;
+            height: 18px;
+            background: #eee;
+            border-radius: 9px;
+            overflow: hidden;
+            margin: 0 auto;
+            box-shadow: 0 2px 8px #6dd5ed33;
+        }
+        .loader-progress {
+            height: 100%;
+            width: 0;
+            background: linear-gradient(90deg, #f9d423 0%, #6dd5ed 100%);
+            border-radius: 9px;
+            animation: load 2.5s linear forwards;
+        }
+        @keyframes load {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        .characters {
+            margin-top: 32px;
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+        }
+        .character {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: #fff;
+            box-shadow: 0 2px 8px #6dd5ed33;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+            border: 2px solid #f9d423;
+        }
+    </style>
+</head>
+<body>
+    <div class="loader-container">
+        <div class="paw">🐾</div>
+        <div class="title">Paw Patrol</div>
+        <div class="subtitle">Even geduld... de pups zijn onderweg!</div>
+        <div class="loader-bar">
+            <div class="loader-progress"></div>
+        </div>
+        <div class="characters">
+            <div class="character" title="Chase" onclick="showCharacter('Chase', '🐶🧢')">🐶🧢</div>
+            <div class="character" title="Marshall" onclick="showCharacter('Marshall', '��‍🚒')">��‍🚒</div>
+            <div class="character" title="Skye" onclick="showCharacter('Skye', '🐶🕶️')">🐶🕶️</div>
+            <div class="character" title="Rubble" onclick="showCharacter('Rubble', '🐶�')">🐶�</div>
+        </div>
+        <div style="margin-top:18px;color:#888;font-size:0.95em;">
+            <em>Tip: Zie je geen emoji? Gebruik een moderne browser zoals Chrome, Edge of Firefox.</em>
+        <script>
+        function showCharacter(name, emoji) {
+            document.body.innerHTML = `
+                <div style='height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;background:linear-gradient(135deg,#6dd5ed 0%,#f9d423 100%);font-family:Segoe UI,Arial,sans-serif;'>
+                    <div style='font-size:6em;'>${emoji}</div>
+                    <h1 style='color:#f9d423;text-shadow:2px 2px 8px #6dd5ed;'>${name}</h1>
+                    <a href='' style='margin-top:32px;font-size:1.2em;color:#333;text-decoration:underline;'>Terug naar laadscherm</a>
+                </div>
+            `;
+            document.querySelector('a').onclick = function(e) {
+                e.preventDefault();
+                window.location.reload();
+            };
+        }
+        </script>
+        </div>
+    </div>
+</body>
+</html>
