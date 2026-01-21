@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Hobby's - Sylwester Luniewski</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <header>
+      <nav class="nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="simracing.html">Sim racing</a>
+        <a href="computers.html">Computers</a>
+        <a href="tekenen.html">Tekenen</a>
+        <a href="voetbal.html">Voetbal</a>
+        <a href="muziek.html">Muziek</a>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Zoeken..." oninput="liveSearch()">
+            <button onclick="searchText()">Zoek</button>
+        </div>
+
+        <div id="liveResults" class="live-results"></div>
+
+        
+      </nav>
+    </header>
+
+    <div class="hero-content">
+  
+  <div class="left-list">
+    <h1>Mijn Hobby's</h1>
+    <div class="text">
+      <p>- Sim racing</p>
+      <p>- Computers / Programmeren</p>
+      <p>- Tekenen</p>
+      <p>- Voetbal</p>
+      <p>- Muziek</p>
+    </div>
+  </div>
+
+  <div class="right-image">
+    <img src="neo_imagine_with_finger.jpg" alt="Neo test foto">
+  </div>
+
+</div>
+
+    <footer>
+      ©2026 - Sylwester Luniewski
+    </footer>
+
+  </div>
+  <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,205 @@
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #05070b;
+  color: #e5e9f0;
+  min-height: 100vh;
+}
+
+/* Page wrapper */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Left side (list) */
+.left-list {
+  max-width: 50%;
+}
+
+/* Right side (image) */
+.right-image img {
+  width: auto;        /* maintain aspect ratio */
+  height: 250px;       /* adjust size if needed */
+  border: 2px solid #1e90ff;
+  border-radius: 6px;
+  box-shadow: 0 0 12px rgba(30, 144, 255, 0.4);
+}
+
+/* Header */
+header {
+  border-bottom: 2px solid #1e90ff;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+/* Navigation */
+nav {
+  margin-top: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #e5e9f0;
+  padding: 8px 14px;
+  border: 1px solid #1e90ff;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+nav a:hover {
+  background: #1e90ff;
+  color: #05070b;
+  box-shadow: 0 0 8px #1e90ff;
+}
+
+/* Active page link */
+nav a.active {
+  background: #1e90ff;
+  color: #05070b;
+}
+
+.search-box {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.search-box input {
+  padding: 8px 12px;
+  border: 1px solid #1e90ff;
+  background: #0a0f18;
+  color: #e5e9f0;
+  border-radius: 4px;
+  width: 200px;
+}
+
+.search-box input:focus {
+  outline: none;
+  box-shadow: 0 0 8px #1e90ff;
+}
+
+.search-box button {
+  padding: 8px 14px;
+  background: #1e90ff;
+  color: #05070b;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.search-box button:hover {
+  background: #63b3ff;
+  box-shadow: 0 0 8px #1e90ff;
+}
+
+/* Main content */
+main {
+  margin-top: 20px;
+  border: 1px solid #1e90ff;
+  border-radius: 6px;
+  padding: 20px;
+  background: radial-gradient(circle at top left, #101522, #05070b);
+  box-shadow: 0 0 12px rgba(30, 144, 255, 0.25);
+}
+
+/* Section titles */
+main h2 {
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+  border-bottom: 1px solid #1e90ff;
+  padding-bottom: 6px;
+}
+
+/* Paragraphs */
+main p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* Cards for items (if you want to list stuff) */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.card {
+  border: 1px solid #1e90ff;
+  border-radius: 6px;
+  padding: 12px;
+  background: #070a12;
+  box-shadow: 0 0 8px rgba(30, 144, 255, 0.2);
+}
+
+.card h3 {
+  margin-bottom: 6px;
+  font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+  margin-top: 25px;
+  padding-top: 10px;
+  border-top: 1px solid #1e90ff;
+  font-size: 0.85rem;
+  color: #9ca3af;
+  text-align: center;
+}
+
+.live-results {
+  position: absolute;
+  background: #0a0f1a;
+  border: 1px solid #1e90ff;
+  width: 200px;
+  margin-top: 5px;
+  padding: 5px;
+  display: none;
+  z-index: 100;
+  border-radius: 6px;
+}
+
+.live-results div {
+  padding: 6px;
+  cursor: pointer;
+  border-bottom: 1px solid #1e90ff33;
+}
+
+.live-results div:hover {
+  background: #1e90ff33;
+}
+
+mark.highlight {
+  background: #1e90ff;
+  color: #05070b;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
