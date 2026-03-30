@@ -53,7 +53,6 @@ def BenzineAuto():
         if jaar == 1:
             print(f"Jaar {jaar}: Prijs = {prijsEersteJaar:.2f}")
         else:
-            prijsaa = prijsVprijsVervolgJaar * (jaar - 1)
             print(f"Jaar {jaar}: Prijs = {prijsVervolgJaar:.2f} + {prijsVervolgJaar} * {jaar - 1}")
 
     totaalPrijs = prijsEersteJaar + prijsVervolgJaar * (totaalJaar - 1)
