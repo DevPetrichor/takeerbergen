@@ -36,7 +36,7 @@ def BenzineAuto():
     aankoopPrijs = 31.499 # cardoen.be - Kia ProCeed
     onderhoud = 804 # cardoen.be - onderhoudscontract
     biv = 0 # belastingen.fenb.be - Simulatie
-    verzekering = 1,248 # cardoen.be - autoverzekering
+    verzekering = 1.248 # cardoen.be - autoverzekering
     brandstof = 1.861 # anwb.nl - Benzineprijs
     kilometers = 15000
     verkeersBelasting =   250.4 # belastingen.fenb.be - Simulatie
