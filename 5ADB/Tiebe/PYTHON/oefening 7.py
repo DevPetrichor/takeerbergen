@@ -22,3 +22,8 @@ if keuze==2:
             print(f"Je moet 20% van het bedrag betalen wat neerkomt op {prijsHuis*0.20} euro")
     else:
         print("Je hebt niet genoeg geld om het huis te kopen!")
+if keuze==3:
+    gewicht=float(input("Wat is het gewicht "))
+    eenheid=input("Wat is de eenheid? (kg of lbs)")
+    if eenheid == "kg":
+        print(f"{gewicht} kg is gelijk aan {gewicht*2.2} lbs")
