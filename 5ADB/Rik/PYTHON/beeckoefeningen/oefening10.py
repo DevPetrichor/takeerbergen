@@ -1,13 +1,13 @@
 def ElectrischeAuto():
-    aankoopPrijs = 50000
-    onderhoud = 500
-    biv = 64.5
-    verzekering = 1200
-    brandstof = 0.20   
-    kwh = 70          
-    batterij = 360   
+    aankoopPrijs = 31895 #  whattherange.com/elektrische-auto - Volvo EX30
+    onderhoud = 350 # Volvo Care Offer
+    biv = 61.5 # belastingen.fenb.be - Simulatie
+    verzekering = 1170 # verzekeringen.be - Yuzzu Full Omnium
+    brandstof = 0.3306 # engie.be - Blog
+    kwh = 51 # whattherange.com/elektrische-auto - Volvo EX30
+    batterij = 254 # whattherange.com/elektrische-auto - Volvo EX30
     kilometers = 15000
-    verkeersBelasting = 103
+    verkeersBelasting = 102.96 # belastingen.fenb.be - Simulatie
     totaalJaar = 17
 
     energiePerJaar = brandstof * kwh * (kilometers / batterij)
@@ -33,13 +33,13 @@ def ElectrischeAuto():
     print(prijsVervolgJaar)
 
 def BenzineAuto():
-    aankoopPrijs = 40000
-    onderhoud = 500
-    biv = 500
-    verzekering = 1200
-    brandstof = 1.50   
+    aankoopPrijs = 31.499 # cardoen.be - Kia ProCeed
+    onderhoud = 804 # cardoen.be - onderhoudscontract
+    biv = 0 # belastingen.fenb.be - Simulatie
+    verzekering = 1,248 # cardoen.be - autoverzekering
+    brandstof = 1.861 # anwb.nl - Benzineprijs
     kilometers = 15000
-    verkeersBelasting = 270
+    verkeersBelasting =   250.4 # belastingen.fenb.be - Simulatie
     totaalJaar = 17
 
     energiePerJaar = brandstof * (kilometers / 15) 
