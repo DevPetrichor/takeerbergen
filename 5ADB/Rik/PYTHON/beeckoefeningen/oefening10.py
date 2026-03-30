@@ -30,8 +30,8 @@ def ElectrischeAuto():
     print("De totale prijs van de auto over", totaalJaar, "jaar is:", f"{totaalPrijs:.2f}")
     print("De prijs per jaar is:", f"{totaalPrijs / totaalJaar:.2f}")
     print("De prijs per kilometer is:", f"{prijsPerKM:.2f}")
-    print(f"{prijsEersteJaar:.0f}")
-    print(f"{prijsVervolgJaar:.0f}")
+    print(f"Prijs eerste jaar: {prijsEersteJaar:.0f}")
+    print(f"Prijs vervolgjaar: {prijsVervolgJaar:.0f}")
 
 def BenzineAuto():
     aankoopPrijs = 31.499 # cardoen.be - Kia ProCeed
@@ -63,8 +63,8 @@ def BenzineAuto():
     print("De totale prijs van de auto over", totaalJaar, "jaar is:", f"{totaalPrijs:.2f}")
     print("De prijs per jaar is:", f"{totaalPrijs / totaalJaar:.2f}")
     print("De prijs per kilometer is:", f"{prijsPerKM:.2f}")
-    print(f"{prijsEersteJaar:.0f}")
-    print(f"{prijsVervolgJaar:.0f}")
+    print(f"Prijs eerste jaar: {prijsEersteJaar:.0f}")
+    print(f"Prijs vervolgjaar: {prijsVervolgJaar:.0f}")
 
 print("Elektrische Auto:")
 ElectrischeAuto()
