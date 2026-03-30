@@ -21,7 +21,8 @@ def ElectrischeAuto():
         if jaar == 1:
             print(f"Jaar {jaar}: Prijs = {prijsEersteJaar:.2f}")
         else:
-            print(f"Jaar {jaar}: Prijs = {prijsVervolgJaar:.2f} + {prijsVervolgJaar} * {jaar - 1}")
+            uitgerekend = prijsVervolgJaar + prijsVervolgJaar * (jaar - 1)
+            print(f"Jaar {jaar}: Prijs = {uitgerekend}")
 
     totaalPrijs = prijsEersteJaar + prijsVervolgJaar * (totaalJaar - 1)
     prijsPerKM = totaalPrijs / totaalKM
@@ -29,8 +30,8 @@ def ElectrischeAuto():
     print("De totale prijs van de auto over", totaalJaar, "jaar is:", f"{totaalPrijs:.2f}")
     print("De prijs per jaar is:", f"{totaalPrijs / totaalJaar:.2f}")
     print("De prijs per kilometer is:", f"{prijsPerKM:.2f}")
-    print(prijsEersteJaar)
-    print(prijsVervolgJaar)
+    print(prijsEersteJaar).round()
+    print(prijsVervolgJaar).round()
 
 def BenzineAuto():
     aankoopPrijs = 31.499 # cardoen.be - Kia ProCeed
@@ -53,7 +54,8 @@ def BenzineAuto():
         if jaar == 1:
             print(f"Jaar {jaar}: Prijs = {prijsEersteJaar:.2f}")
         else:
-            print(f"Jaar {jaar}: Prijs = {prijsVervolgJaar:.2f} + {prijsVervolgJaar} * {jaar - 1}")
+            uitgerekend = prijsVervolgJaar + prijsVervolgJaar * (jaar - 1)
+            print(f"Jaar {jaar}: Prijs = {uitgerekend}")
 
     totaalPrijs = prijsEersteJaar + prijsVervolgJaar * (totaalJaar - 1)
     prijsPerKM = totaalPrijs / totaalKM
@@ -61,8 +63,8 @@ def BenzineAuto():
     print("De totale prijs van de auto over", totaalJaar, "jaar is:", f"{totaalPrijs:.2f}")
     print("De prijs per jaar is:", f"{totaalPrijs / totaalJaar:.2f}")
     print("De prijs per kilometer is:", f"{prijsPerKM:.2f}")
-    print(prijsEersteJaar)
-    print(prijsVervolgJaar)
+    print(prijsEersteJaar).round()
+    print(prijsVervolgJaar).round()
 
 print("Elektrische Auto:")
 ElectrischeAuto()
