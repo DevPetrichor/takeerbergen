@@ -26,9 +26,9 @@ if keuze==3:
     gewicht=float(input("Wat is het gewicht "))
     eenheid=input("Wat is de eenheid? (kg of lbs)")
     if eenheid == "kg":
-        print(f"{gewicht} kg is gelijk aan {gewicht*2.2} lbs")
+        print(f"{gewicht} kg is gelijk aan {round(gewicht*2.2, 2)} lbs")
     elif eenheid == "lbs":
-        print(f"{gewicht} lbs is gelijk aan {gewicht/2.2} kg")
+        print(f"{gewicht} lbs is gelijk aan {round(gewicht/2.2, 2)} kg")
     else:
         print("Ongeldige eenheid, voer 'kg' of 'lbs' in.")
-    
+        
