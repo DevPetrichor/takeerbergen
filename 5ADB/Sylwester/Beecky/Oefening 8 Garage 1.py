@@ -1,4 +1,4 @@
-class Auto:
+class Auto: # Deze klasse vertegenwoordigt een auto met merk, model en bouwjaar
     def __init__(self, merk, model, bouwjaar):
         self.merk = merk
         self.model = model
@@ -8,7 +8,7 @@ class Auto:
         return f"Merk: {self.merk}, Model: {self.model}, Bouwjaar: {self.bouwjaar}"
 
 
-class Garage:
+class Garage: # Deze klasse beheert de auto's in de garage
     def __init__(self):
         self.autos = []
 
@@ -32,11 +32,11 @@ class Garage:
             print("Ongeldig nummer. Geen auto verwijderd.")
 
 
-class GarageApp:
+class GarageApp:# Deze klasse beheert de gebruikersinterface van de garagetoepassing
     def __init__(self):
         self.garage = Garage()
 
-    def start(self):
+    def start(self): # Deze methode start de applicatie en toont het hoofdmenu
         while True:
             print("\n--- Welkom bij de garage! ---")
             print("1: Auto binnenbrengen.")
@@ -46,7 +46,7 @@ class GarageApp:
             
             try:
                 keuze = int(input("Welke optie kies je? "))
-            except ValueError:
+            except ValueError: # Foutafhandeling voor niet-numerieke invoer
                 print("Ongeldige invoer.")
                 continue
 
@@ -66,14 +66,14 @@ class GarageApp:
             else:
                 print("Ongeldige keuze.")
 
-    def auto_toevoegen_menu(self):
+    def auto_toevoegen_menu(self): # Deze methode vraagt de gebruiker om details van de auto en voegt deze toe aan de garage
         merk = input("Wat is het merk van de auto? ")
         model = input("Wat is het model van de auto? ")
         bouwjaar = int(input("Wat is het bouwjaar van de auto? "))
         auto = Auto(merk, model, bouwjaar)
         self.garage.auto_toevoegen(auto)
 
-    def auto_verwijderen_menu(self):
+    def auto_verwijderen_menu(self): # Deze methode toont de auto's in de garage en vraagt de gebruiker welke auto hij wil verwijderen
         self.garage.autos_bekijken()
         if not self.garage.autos:
             return
@@ -81,7 +81,7 @@ class GarageApp:
         try:
             index = int(input("Welke auto wil je verwijderen? Kies een nummer: ")) - 1
             self.garage.auto_verwijderen(index)
-        except ValueError:
+        except ValueError: # Foutafhandeling voor niet-numerieke invoer
             print("Ongeldige invoer. Geen auto verwijderd.")
 
 
